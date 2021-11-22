@@ -1,6 +1,5 @@
 <algo name="Allgather(n=16)-DistributedRelayedSwitch(local=DGX1_1KB,copies=2,lenrelay=2)-steps=16-gurobisol-improve-1633890614" nchannels="1" nchunksperloop="16" proto="Simple" coll="allgather" inplace="1" redop="nop" ngpus="16">
   <gpu id="0" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
     <tb id="0" send="1" recv="4" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -42,9 +41,11 @@
       <step s="8" type="r" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="9" type="r" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="1" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="1"/>
     <tb id="0" send="-1" recv="2" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="14" dstbuf="o" dstoff="14" cnt="1" depid="-1" deps="-1" hasdep="0"/>
@@ -88,9 +89,11 @@
       <step s="5" type="s" srcbuf="o" srcoff="10" dstbuf="o" dstoff="10" cnt="1" depid="1" deps="0" hasdep="0"/>
       <step s="6" type="s" srcbuf="o" srcoff="11" dstbuf="o" dstoff="11" cnt="1" depid="2" deps="6" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="1" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="2" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="2"/>
     <tb id="0" send="0" recv="0" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="2" dstbuf="o" dstoff="2" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -129,9 +132,11 @@
       <step s="6" type="r" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="7" type="r" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="2" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="3" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="3"/>
     <tb id="0" send="-1" recv="1" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -177,9 +182,11 @@
       <step s="2" type="s" srcbuf="o" srcoff="13" dstbuf="o" dstoff="13" cnt="1" depid="3" deps="4" hasdep="0"/>
       <step s="3" type="s" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="0" deps="0" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="3" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="4" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="4"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="9" dstbuf="o" dstoff="9" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="10" dstbuf="o" dstoff="10" cnt="1" depid="-1" deps="-1" hasdep="0"/>
@@ -222,9 +229,11 @@
       <step s="1" type="s" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="1" deps="0" hasdep="0"/>
       <step s="2" type="s" srcbuf="o" srcoff="14" dstbuf="o" dstoff="14" cnt="1" depid="0" deps="2" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="5" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="5"/>
     <tb id="0" send="-1" recv="1" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -266,9 +275,11 @@
       <step s="5" type="s" srcbuf="o" srcoff="9" dstbuf="o" dstoff="9" cnt="1" depid="3" deps="4" hasdep="0"/>
       <step s="6" type="r" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="5" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="6" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="6"/>
     <tb id="0" send="-1" recv="7" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="5" dstbuf="o" dstoff="5" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="1" dstbuf="o" dstoff="1" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -306,9 +317,11 @@
       <step s="6" type="r" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="7" type="s" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="7" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="7"/>
     <tb id="0" send="-1" recv="4" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -350,9 +363,11 @@
       <step s="2" type="s" srcbuf="o" srcoff="11" dstbuf="o" dstoff="11" cnt="1" depid="3" deps="6" hasdep="0"/>
       <step s="3" type="s" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="4" deps="3" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="7" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="8" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="8"/>
     <tb id="0" send="1" recv="11" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="11" dstbuf="o" dstoff="11" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="13" dstbuf="o" dstoff="13" cnt="1" depid="-1" deps="-1" hasdep="0"/>
@@ -394,9 +409,11 @@
       <step s="4" type="s" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="0" deps="8" hasdep="0"/>
       <step s="5" type="s" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="3" deps="5" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="8" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="9" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="9"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="1" dstbuf="o" dstoff="1" cnt="2" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="5" dstbuf="o" dstoff="5" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -440,9 +457,11 @@
       <step s="5" type="s" srcbuf="o" srcoff="2" dstbuf="o" dstoff="2" cnt="1" depid="0" deps="0" hasdep="0"/>
       <step s="6" type="s" srcbuf="o" srcoff="3" dstbuf="o" dstoff="3" cnt="1" depid="2" deps="6" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="9" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="10" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="10"/>
     <tb id="0" send="3" recv="11" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="11" dstbuf="o" dstoff="11" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="s" srcbuf="o" srcoff="8" dstbuf="o" dstoff="8" cnt="1" depid="3" deps="0" hasdep="0"/>
@@ -481,9 +500,11 @@
       <step s="6" type="s" srcbuf="o" srcoff="5" dstbuf="o" dstoff="5" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="7" type="s" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="1" deps="4" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="10" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="11" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="11"/>
     <tb id="0" send="-1" recv="9" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -529,9 +550,11 @@
       <step s="2" type="s" srcbuf="o" srcoff="5" dstbuf="o" dstoff="5" cnt="1" depid="3" deps="4" hasdep="0"/>
       <step s="3" type="s" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="0" deps="0" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="11" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="12" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="12"/>
     <tb id="0" send="-1" recv="8" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="1" dstbuf="o" dstoff="1" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="2" dstbuf="o" dstoff="2" cnt="1" depid="-1" deps="-1" hasdep="0"/>
@@ -574,9 +597,11 @@
       <step s="1" type="s" srcbuf="o" srcoff="8" dstbuf="o" dstoff="8" cnt="1" depid="1" deps="0" hasdep="0"/>
       <step s="2" type="s" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="0" deps="2" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="13" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="13"/>
     <tb id="0" send="-1" recv="9" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="8" dstbuf="o" dstoff="8" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -618,9 +643,11 @@
       <step s="5" type="s" srcbuf="o" srcoff="1" dstbuf="o" dstoff="1" cnt="1" depid="3" deps="4" hasdep="0"/>
       <step s="6" type="r" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="13" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="14" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="14"/>
     <tb id="0" send="-1" recv="15" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="13" dstbuf="o" dstoff="13" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="9" dstbuf="o" dstoff="9" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -658,9 +685,11 @@
       <step s="6" type="r" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="0"/>
       <step s="7" type="s" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
+    <tb id="5" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="14" cnt="1" depid="-1" deps="-1" hasdep="0"/>
+    </tb>
   </gpu>
   <gpu id="15" i_chunks="1" o_chunks="16" s_chunks="0">
-    <copy i_off="0" o_off="15"/>
     <tb id="0" send="-1" recv="12" chan="0">
       <step s="0" type="r" srcbuf="o" srcoff="14" dstbuf="o" dstoff="14" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="8" dstbuf="o" dstoff="8" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -701,6 +730,9 @@
       <step s="1" type="s" srcbuf="o" srcoff="9" dstbuf="o" dstoff="9" cnt="1" depid="4" deps="0" hasdep="0"/>
       <step s="2" type="s" srcbuf="o" srcoff="3" dstbuf="o" dstoff="3" cnt="1" depid="3" deps="6" hasdep="0"/>
       <step s="3" type="s" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="4" deps="3" hasdep="0"/>
+    </tb>
+    <tb id="6" send="-1" recv="-1" chan="0">
+      <step s="0" type="cpy" srcbuf="i" srcoff="0" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="0"/>
     </tb>
   </gpu>
 </algo>

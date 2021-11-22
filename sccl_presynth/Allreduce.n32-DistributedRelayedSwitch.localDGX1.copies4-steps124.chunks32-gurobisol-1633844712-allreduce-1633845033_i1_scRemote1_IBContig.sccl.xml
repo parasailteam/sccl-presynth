@@ -1,37 +1,5 @@
 <algo name="Allreduce(n=32)-DistributedRelayedSwitch(local=DGX1,copies=4)-steps=124,chunks=32-gurobisol-1633844712-allreduce-1633845033" nchannels="1" nchunksperloop="32" proto="Simple" coll="allreduce" inplace="1" redop="nop" ngpus="32">
   <gpu id="0" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="1" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="6" deps="24" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="3" deps="28" hasdep="0"/>
@@ -365,38 +333,6 @@
     </tb>
   </gpu>
   <gpu id="1" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="1" deps="0" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="1" deps="1" hasdep="1"/>
@@ -626,38 +562,6 @@
     </tb>
   </gpu>
   <gpu id="2" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="4" dstbuf="o" dstoff="4" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="5" dstbuf="o" dstoff="5" cnt="1" depid="2" deps="25" hasdep="1"/>
@@ -835,38 +739,6 @@
     </tb>
   </gpu>
   <gpu id="3" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="7" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -1032,38 +904,6 @@
     </tb>
   </gpu>
   <gpu id="4" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="1" dstbuf="o" dstoff="1" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="1" deps="29" hasdep="0"/>
@@ -1139,38 +979,6 @@
     </tb>
   </gpu>
   <gpu id="5" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="1" recv="6" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="s" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -1249,38 +1057,6 @@
     </tb>
   </gpu>
   <gpu id="6" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="2" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="3" dstbuf="o" dstoff="3" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="6" dstbuf="o" dstoff="6" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -1364,38 +1140,6 @@
     </tb>
   </gpu>
   <gpu id="7" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="3" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="7" dstbuf="o" dstoff="7" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="1" deps="30" hasdep="0"/>
@@ -1471,38 +1215,6 @@
     </tb>
   </gpu>
   <gpu id="8" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="9" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="6" deps="5" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="5" deps="29" hasdep="0"/>
@@ -1836,38 +1548,6 @@
     </tb>
   </gpu>
   <gpu id="9" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="8" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="1" deps="0" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="1" deps="1" hasdep="1"/>
@@ -2097,38 +1777,6 @@
     </tb>
   </gpu>
   <gpu id="10" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="8" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="13" dstbuf="o" dstoff="13" cnt="1" depid="1" deps="25" hasdep="1"/>
@@ -2304,38 +1952,6 @@
     </tb>
   </gpu>
   <gpu id="11" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="15" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -2501,38 +2117,6 @@
     </tb>
   </gpu>
   <gpu id="12" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="8" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="9" dstbuf="o" dstoff="9" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="8" dstbuf="o" dstoff="8" cnt="1" depid="1" deps="29" hasdep="0"/>
@@ -2608,38 +2192,6 @@
     </tb>
   </gpu>
   <gpu id="13" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="9" recv="14" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="s" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -2718,38 +2270,6 @@
     </tb>
   </gpu>
   <gpu id="14" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="10" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="11" dstbuf="o" dstoff="11" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="14" dstbuf="o" dstoff="14" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -2833,38 +2353,6 @@
     </tb>
   </gpu>
   <gpu id="15" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="11" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="15" dstbuf="o" dstoff="15" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="1" deps="30" hasdep="0"/>
@@ -2940,38 +2428,6 @@
     </tb>
   </gpu>
   <gpu id="16" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="17" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="23" dstbuf="o" dstoff="23" cnt="1" depid="2" deps="5" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="6" deps="29" hasdep="0"/>
@@ -3305,38 +2761,6 @@
     </tb>
   </gpu>
   <gpu id="17" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="5" deps="24" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="2" deps="7" hasdep="1"/>
@@ -3566,38 +2990,6 @@
     </tb>
   </gpu>
   <gpu id="18" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="16" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="21" dstbuf="o" dstoff="21" cnt="1" depid="2" deps="25" hasdep="1"/>
@@ -3775,38 +3167,6 @@
     </tb>
   </gpu>
   <gpu id="19" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="23" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -3972,38 +3332,6 @@
     </tb>
   </gpu>
   <gpu id="20" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="16" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="17" dstbuf="o" dstoff="17" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="16" dstbuf="o" dstoff="16" cnt="1" depid="1" deps="29" hasdep="0"/>
@@ -4079,38 +3407,6 @@
     </tb>
   </gpu>
   <gpu id="21" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="17" recv="22" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="s" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -4189,38 +3485,6 @@
     </tb>
   </gpu>
   <gpu id="22" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="18" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="19" dstbuf="o" dstoff="19" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="22" dstbuf="o" dstoff="22" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -4304,38 +3568,6 @@
     </tb>
   </gpu>
   <gpu id="23" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="19" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="23" dstbuf="o" dstoff="23" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="1" deps="30" hasdep="0"/>
@@ -4411,38 +3643,6 @@
     </tb>
   </gpu>
   <gpu id="24" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="25" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="31" dstbuf="o" dstoff="31" cnt="1" depid="6" deps="7" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="6" deps="8" hasdep="0"/>
@@ -4778,38 +3978,6 @@
     </tb>
   </gpu>
   <gpu id="25" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="0" chan="0">
       <step s="0" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="6" deps="24" hasdep="0"/>
       <step s="1" type="r" srcbuf="o" srcoff="0" dstbuf="o" dstoff="0" cnt="1" depid="2" deps="10" hasdep="1"/>
@@ -5039,38 +4207,6 @@
     </tb>
   </gpu>
   <gpu id="26" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="24" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="28" dstbuf="o" dstoff="28" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="29" dstbuf="o" dstoff="29" cnt="1" depid="2" deps="25" hasdep="1"/>
@@ -5248,38 +4384,6 @@
     </tb>
   </gpu>
   <gpu id="27" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="31" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -5445,38 +4549,6 @@
     </tb>
   </gpu>
   <gpu id="28" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="24" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="25" dstbuf="o" dstoff="25" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="r" srcbuf="o" srcoff="24" dstbuf="o" dstoff="24" cnt="1" depid="1" deps="29" hasdep="0"/>
@@ -5552,38 +4624,6 @@
     </tb>
   </gpu>
   <gpu id="29" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="25" recv="30" chan="0">
       <step s="0" type="s" srcbuf="o" srcoff="12" dstbuf="o" dstoff="12" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="s" srcbuf="o" srcoff="20" dstbuf="o" dstoff="20" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -5662,38 +4702,6 @@
     </tb>
   </gpu>
   <gpu id="30" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="26" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="27" dstbuf="o" dstoff="27" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="rrc" srcbuf="o" srcoff="30" dstbuf="o" dstoff="30" cnt="1" depid="-1" deps="-1" hasdep="1"/>
@@ -5777,38 +4785,6 @@
     </tb>
   </gpu>
   <gpu id="31" i_chunks="32" o_chunks="32" s_chunks="0">
-    <copy i_off="0" o_off="0"/>
-    <copy i_off="1" o_off="1"/>
-    <copy i_off="2" o_off="2"/>
-    <copy i_off="3" o_off="3"/>
-    <copy i_off="4" o_off="4"/>
-    <copy i_off="5" o_off="5"/>
-    <copy i_off="6" o_off="6"/>
-    <copy i_off="7" o_off="7"/>
-    <copy i_off="8" o_off="8"/>
-    <copy i_off="9" o_off="9"/>
-    <copy i_off="10" o_off="10"/>
-    <copy i_off="11" o_off="11"/>
-    <copy i_off="12" o_off="12"/>
-    <copy i_off="13" o_off="13"/>
-    <copy i_off="14" o_off="14"/>
-    <copy i_off="15" o_off="15"/>
-    <copy i_off="16" o_off="16"/>
-    <copy i_off="17" o_off="17"/>
-    <copy i_off="18" o_off="18"/>
-    <copy i_off="19" o_off="19"/>
-    <copy i_off="20" o_off="20"/>
-    <copy i_off="21" o_off="21"/>
-    <copy i_off="22" o_off="22"/>
-    <copy i_off="23" o_off="23"/>
-    <copy i_off="24" o_off="24"/>
-    <copy i_off="25" o_off="25"/>
-    <copy i_off="26" o_off="26"/>
-    <copy i_off="27" o_off="27"/>
-    <copy i_off="28" o_off="28"/>
-    <copy i_off="29" o_off="29"/>
-    <copy i_off="30" o_off="30"/>
-    <copy i_off="31" o_off="31"/>
     <tb id="0" send="-1" recv="27" chan="0">
       <step s="0" type="rrc" srcbuf="o" srcoff="31" dstbuf="o" dstoff="31" cnt="1" depid="-1" deps="-1" hasdep="1"/>
       <step s="1" type="nop" srcbuf="i" srcoff="-1" dstbuf="o" dstoff="-1" cnt="0" depid="1" deps="30" hasdep="0"/>
